@@ -1,5 +1,11 @@
+import { Profile } from "./components/Profile/Profile.jsx";
+import profile from "./data/profile.json";
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Profile profile={profile} />
+    </>
+  );
 }
 
 export default App;
