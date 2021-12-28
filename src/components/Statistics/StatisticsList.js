@@ -1,17 +1,17 @@
 import PropTypes from "prop-types";
-import { StatisticsItem } from "./StatisticsItem.jsx";
-export const Statistics = ({ title, statistics }) => {
+import { StatisticsListItem } from "./StatisticsListItem";
+export const StatisticsList = ({ title, statistics }) => {
   return (
     <section className="statistics">
       {title && <h2 className="title">{title}</h2>}
 
       <ul className="stat-list">
-        <StatisticsItem statistics={statistics} />
+        <StatisticsListItem statistics={statistics} />
       </ul>
     </section>
   );
 };
-Statistics.propTypes = {
+StatisticsList.propTypes = {
   title: PropTypes.string,
   statistics: PropTypes.array.isRequired,
 };

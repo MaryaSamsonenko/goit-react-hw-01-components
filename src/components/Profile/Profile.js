@@ -4,7 +4,7 @@ export const Profile = ({
   profile: { username, tag, location, avatar, stats },
 }) => {
   return (
-    <div className="profile">
+    <section className="profile">
       <div className="description">
         <img src={avatar} alt="User avatar" className="avatar" />
         <p className="username">{username}</p>
@@ -26,7 +26,7 @@ export const Profile = ({
           <span className="quantity">{stats.likes}</span>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 
@@ -40,6 +40,6 @@ Profile.propTypes = {
       followers: PropTypes.number.isRequired,
       views: PropTypes.number.isRequired,
       likes: PropTypes.number.isRequired,
-    }),
-  }),
+    }).isRequired,
+  }).isRequired,
 };
