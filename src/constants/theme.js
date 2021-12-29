@@ -1,17 +1,16 @@
 export const theme = Object.freeze({
   colors: {
     white: "#ffffff",
-    grey: "#bdbdbd",
-    greyBg: "#f5f5fa",
+    grey: "#545454",
+    greyLigth: "#f7f7f7",
     greyOpacity: "rgba(47, 48, 58, 0.1)",
-    green: "#4caf50",
-    red: "#f44336",
+    brown: "#3d2626",
+    orange: "#ff6b08",
     tableHead: "#423a8a",
-    primaryText: "#2b2b2b",
+    primaryText: "#292929",
     secondaryText: "#757575",
     tableText: "#afb1b8",
-    boxShadow:
-      "0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2)",
+    boxShadow: "0px 5px 10px 8px rgba(34, 60, 80, 0.2)",
   },
   fonts: {
     secondary: "'Work Sans', sans-serif",

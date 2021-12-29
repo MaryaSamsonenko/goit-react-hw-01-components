@@ -1,32 +1,42 @@
 import PropTypes from "prop-types";
+import { Section } from "../../common/Section.styled";
+import {
+  Avatar,
+  InfoWrapper,
+  UserName,
+  Text,
+  StatsList,
+  StatsListItem,
+  Label,
+  LabelValue,
+} from "./Profile.styled";
 
 export const Profile = ({
   profile: { username, tag, location, avatar, stats },
 }) => {
   return (
-    <section className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="username">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
-
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </section>
+    <Section>
+      <InfoWrapper>
+        <Avatar src={avatar} alt="User avatar" />
+        <UserName>{username}</UserName>
+        <Text className="tag">@{tag}</Text>
+        <Text className="location">{location}</Text>
+      </InfoWrapper>
+      <StatsList>
+        <StatsListItem>
+          <Label>Followers</Label>
+          <LabelValue className="quantity">{stats.followers}</LabelValue>
+        </StatsListItem>
+        <StatsListItem>
+          <Label>Views</Label>
+          <LabelValue className="quantity">{stats.views}</LabelValue>
+        </StatsListItem>
+        <StatsListItem>
+          <Label>Likes</Label>
+          <LabelValue className="quantity">{stats.likes}</LabelValue>
+        </StatsListItem>
+      </StatsList>
+    </Section>
   );
 };
 

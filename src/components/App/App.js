@@ -2,7 +2,7 @@ import { Profile } from "../Profile/Profile.js";
 import { StatisticsList } from "../Statistics/StatisticsList.js";
 import { Friendslist } from "../Friends/Friendslist";
 import { TransactionHistory } from "../TransactionHistory/TransactionHistory";
-import { GlobalStyle } from "../../constants/GlobalStyles";
+import { GlobalStyle } from "../../constants/Global.styled";
 import profile from "../data/profile.json";
 import statistics from "../data/statistics.json";
 import friends from "../data/friends.json";
