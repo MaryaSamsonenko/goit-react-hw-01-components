@@ -8,7 +8,7 @@ export const Table = styled.table`
 `;
 export const TableTr = styled.tr`
   font-family: ${(props) => props.theme.fonts.secondary};
-  background: ${(props) => props.theme.colors.brown};
+  background: ${(props) => props.theme.colors.blue};
   border: 1px solid ${(props) => props.theme.colors.greyOpacity};
 `;
 export const TableTh = styled.th`

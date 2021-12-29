@@ -4,7 +4,7 @@ import { font } from "../../helpers/mixins";
 export const TableTr = styled.tr`
 border: 1px solid ${(props) => props.theme.colors.greyOpacity};
 :nth-child(even) {
-    background: ${(props) => props.theme.colors.greyLigth}
+    background: ${(props) => props.theme.colors.blueLigth}
 `;
 export const TableTd = styled.th`
   ${font({ fs: 18, fw: 400, lh: 22 })};
