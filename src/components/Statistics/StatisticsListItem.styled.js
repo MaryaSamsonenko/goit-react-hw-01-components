@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import { font, flexCenter } from "../../helpers/mixins";
 import { getRandomRGBColor } from "../../helpers/randomColor";
 

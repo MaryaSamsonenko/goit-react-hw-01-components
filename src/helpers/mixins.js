@@ -5,7 +5,7 @@ export const font = ({ fs, fw, lh }) => `
 
 export const flexCenter = ({ fw, ai, jc }) => `
 display: flex;
-flex-wrap: ${fw ? fw : "no-wrap"};
+flex-wrap: ${flexCenter ? fw : "no-wrap"};
 align-items:${ai ? ai : "center"};
 justify-content:${jc ? jc : "center"};
   `;
