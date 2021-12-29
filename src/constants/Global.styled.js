@@ -8,6 +8,8 @@ export const GlobalStyle = createGlobalStyle`
 body,
 html {
   height: 100%;
+  padding: 20px 0;
+ 
 }
 img,
 picture,

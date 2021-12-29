@@ -6,7 +6,8 @@ export const Section = styled.section`
   border-radius: ${(props) => props.theme.spacing(1)};
   box-shadow: ${(props) => props.theme.colors.boxShadow};
   padding: ${(props) => props.theme.spacing(10)};
-    
-    & :not(:last-child):
+
+  &:not(:last-child) {
     margin-bottom: ${(props) => props.theme.spacing(10)};
+  }
 `;

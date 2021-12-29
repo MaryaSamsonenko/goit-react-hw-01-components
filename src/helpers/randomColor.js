@@ -1,8 +1,8 @@
-export function generateDarkColorHex() {
-  let color = "#";
-  for (let i = 0; i < 3; i++)
-    color += (
-      "0" + Math.floor((Math.random() * Math.pow(16, 2)) / 2).toString(16)
-    ).slice(-2);
-  return color;
+function getRandomIntegerFromInterval(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+export function getRandomRGBColor() {
+  return `rgb(${getRandomIntegerFromInterval(0, 255)},
+    ${getRandomIntegerFromInterval(0, 255)},
+    ${getRandomIntegerFromInterval(0, 255)})`;
 }

@@ -29,7 +29,7 @@ export const UserName = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: ${(props) => props.theme.fonts.secondaryText};
+  font-family: ${(props) => props.theme.fonts.secondary};
   ${font({ fs: 18, fw: 500, lh: 20 })};
   color: ${(props) => props.theme.colors.grey};
   &:not(:last-child) {
