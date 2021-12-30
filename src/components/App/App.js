@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { Profile } from "../Profile/Profile.js";
 import { StatisticsList } from "../Statistics/StatisticsList.js";
 import { Friendslist } from "../Friends/Friendslist";
@@ -28,10 +27,3 @@ function App() {
   );
 }
 export default App;
-Profile.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
-};

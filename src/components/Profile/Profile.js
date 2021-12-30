@@ -11,7 +11,13 @@ import {
   LabelValue,
 } from "./Profile.styled";
 
-export const Profile = ({ username, tag, location, avatar, stats }) => {
+export const Profile = ({
+  username,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) => {
   return (
     <Section>
       <InfoWrapper>
@@ -23,15 +29,15 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       <StatsList>
         <StatsListItem>
           <Label>Followers</Label>
-          <LabelValue className="quantity">{stats.followers}</LabelValue>
+          <LabelValue className="quantity">{followers}</LabelValue>
         </StatsListItem>
         <StatsListItem>
           <Label>Views</Label>
-          <LabelValue className="quantity">{stats.views}</LabelValue>
+          <LabelValue className="quantity">{views}</LabelValue>
         </StatsListItem>
         <StatsListItem>
           <Label>Likes</Label>
-          <LabelValue className="quantity">{stats.likes}</LabelValue>
+          <LabelValue className="quantity">{likes}</LabelValue>
         </StatsListItem>
       </StatsList>
     </Section>
