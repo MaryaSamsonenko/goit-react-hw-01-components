@@ -6,11 +6,17 @@ export const Friendslist = ({ friends }) => {
   return (
     <Section>
       <ul className="friendsList">
-        <FriendsListItem friends={friends} />
+        {friends.map((friend) => (
+          <FriendsListItem key={friend.id} friend={friend} />
+        ))}
       </ul>
     </Section>
   );
 };
 Friendslist.propTypes = {
-  friends: PropTypes.array.isRequired,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    }).isRequired
+  ),
 };
