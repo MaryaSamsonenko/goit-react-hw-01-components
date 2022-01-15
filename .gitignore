@@ -3,7 +3,6 @@
 # dependencies
 /node_modules
 .vscode
-.husky
 /.pnp
 .pnp.js
 .eslintcache
